@@ -2,26 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply h-full;
+}
+
+.tra {
+  translate: -50%;
+}
+
+.custom-shape-divider-top-1691178521 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1691178521 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 61px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1691186777 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1691186777 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 72px;
+}
+
+.custom-shape-divider-top-1691256564 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1691256564 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 42px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1691248774 {
+  position: absolute;
+  top: -42px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1691248774 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 42px;
+  transform: rotateY(180deg);
+}
+.shape-fill {
+  fill: #202020;
 }
