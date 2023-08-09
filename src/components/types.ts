@@ -10,4 +10,11 @@ export interface IImage {
   id: number;
   imageSrc: string;
   title: string;
+  href?: string;
+}
+
+export interface IBanner {
+  imageSrc: string;
+  title: string;
+  alt: string;
 }

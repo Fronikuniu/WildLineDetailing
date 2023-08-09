@@ -77,3 +77,18 @@ body {
 .shape-fill {
   fill: #202020;
 }
+
+.custom-shape-divider-top-1691601869 {
+  position: absolute;
+  bottom: -132px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1691601869 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 132px;
+}
