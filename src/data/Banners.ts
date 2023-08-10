@@ -23,3 +23,9 @@ export const packagesBanner: IBanner = {
   imageSrc: '/banner.jpg',
   alt: 'Baner pakiety',
 };
+
+export const contactBanner: IBanner = {
+  title: 'Kontakt',
+  imageSrc: '/banner.jpg',
+  alt: 'Kontakty baner',
+};

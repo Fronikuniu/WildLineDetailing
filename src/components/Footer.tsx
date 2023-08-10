@@ -1,13 +1,16 @@
 'use client';
 
+import { business } from '@/data/Business';
 import { menuItems } from '@/data/Links';
 import { Divider, Image, Link } from '@nextui-org/react';
+import { formatNumber } from 'libphonenumber-js';
 import { getURL } from 'next/dist/shared/lib/utils';
 import { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaRegCopyright } from 'react-icons/fa6';
 
 export default function Footer() {
   const [url, setUrl] = useState('');
+  const formattedPhoneNumber = formatNumber(business.phone, 'INTERNATIONAL');
 
   useEffect(() => {
     setUrl(getURL());
@@ -41,15 +44,36 @@ export default function Footer() {
             <div className="flex gap-x-10 gap-y-5 flex-col">
               <div className="flex flex-col">
                 <p>Email: </p>
-                <p>contact@wldetailing.pl</p>
+                <Link
+                  isExternal
+                  color="foreground"
+                  href={`mailto:${business.email}`}
+                  // className="text-lg lg:text-xl font-semibold text-primaryC-100"
+                >
+                  {business.email}
+                </Link>
               </div>
               <div className="flex flex-col">
                 <p>Telefon: </p>
-                <p>(+48) 123 456 789</p>
+                <Link
+                  isExternal
+                  color="foreground"
+                  href={`tel:+48${business.phone}`}
+                  // className="text-lg lg:text-xl font-semibold text-primaryC-100"
+                >
+                  {formattedPhoneNumber}
+                </Link>
               </div>
               <div className="flex flex-col">
                 <p>Adres: </p>
-                <p>Rzeszów, jakas tam ulica 420</p>
+                <Link
+                  isExternal
+                  color="foreground"
+                  href={business.addressLink}
+                  // className="text-lg lg:text-xl font-semibold text-primaryC-100"
+                >
+                  {business.address}
+                </Link>
               </div>
             </div>
           </div>
@@ -87,7 +111,7 @@ export default function Footer() {
         <Divider />
         <div className="flex justify-between items-center pt-6">
           <div className="flex items-center gap-2">
-            © 2023 WildLine Detailing. All rights reserved.
+            © 2023 {business.name}. All rights reserved.
           </div>
           <p className="text-grayC-100">Created by: FroniuDev</p>
         </div>

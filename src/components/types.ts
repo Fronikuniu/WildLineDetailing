@@ -18,3 +18,19 @@ export interface IBanner {
   title: string;
   alt: string;
 }
+
+export interface IOpenAt {
+  fromDay: TDay;
+  toDay: TDay;
+  fromHour: number;
+  toHour: number;
+}
+
+export type TDay =
+  | 'Niedziela'
+  | 'Poniedziałek'
+  | 'Wtorek'
+  | 'Środa'
+  | 'Czwartek'
+  | 'Piątek'
+  | 'Sobota';
