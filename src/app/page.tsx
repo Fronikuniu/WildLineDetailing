@@ -65,7 +65,7 @@ export default function Home() {
         <div className="flex flex-col-reverse md:flex-row gap-5 w-full items-center max-w-[1024px] px-6 md:px-9 lg:px-6">
           <div className="w-1/2 h-full flex justify-center items-center">
             <Image
-              className="max-w-[300px] lg:max-w-[450px] object-contain"
+              className="max-w-[300px] lg:max-w-[450px] object-contain m-auto"
               src="/logo_transparent.png"
               alt="My picture"
             ></Image>

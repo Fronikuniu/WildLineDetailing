@@ -6,7 +6,7 @@ import { Divider, Image, Link } from '@nextui-org/react';
 import { formatNumber } from 'libphonenumber-js';
 import { getURL } from 'next/dist/shared/lib/utils';
 import { useEffect, useState } from 'react';
-import { FaFacebook, FaInstagram, FaRegCopyright } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
   const [url, setUrl] = useState('');
@@ -87,7 +87,7 @@ export default function Footer() {
                   key={`${item}-${i}`}
                   color="foreground"
                   className={`text-lg ${
-                    url === item.href ? 'text-yellowC-100' : ''
+                    url.includes(item.href) ? 'text-yellowC-100' : ''
                   }`}
                   href={item.href}
                 >

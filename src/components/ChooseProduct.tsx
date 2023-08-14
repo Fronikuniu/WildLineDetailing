@@ -1,6 +1,6 @@
 'use client';
 
-import { IBanner, IImage } from './types';
+import { IBanner, IProduct } from './types';
 import { Card, CardFooter, CardHeader, Image, Link } from '@nextui-org/react';
 
 export default function ChooseProduct({
@@ -8,7 +8,7 @@ export default function ChooseProduct({
   items,
 }: {
   banner: IBanner;
-  items: IImage[];
+  items: IProduct[];
 }) {
   return (
     <section className="bg-lightC-100">
@@ -16,12 +16,12 @@ export default function ChooseProduct({
         <div className="w-screen h-[350px] top-0 left-0 absolute z-10 bg-gradient-to-t from-blackC-100"></div>
 
         <h1 className="w-full absolute z-10 max-w-[1280px] px-6 sm:px-10 lg:px-none md:text-4xl lg:text-5xl text-2xl font-semibold mt-[50px]">
-          {banner.title}
+          {banner?.title}
         </h1>
         <Image
           className="w-screen h-[350px] z-0 object-cover object-top"
-          src={banner.imageSrc}
-          alt={banner.alt}
+          src={banner?.imageSrc}
+          alt={banner?.alt}
         ></Image>
 
         <div className="custom-shape-divider-top-1691601869">
@@ -41,7 +41,7 @@ export default function ChooseProduct({
         </div>
       </div>
       <div className="m-auto py-[100px] grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center max-w-[1280px] px-6 sm:px-10 lg:px-none">
-        {items.map((image) => (
+        {items?.map((image) => (
           <Link key={image.id} href={image.href}>
             <Card isFooterBlurred className="w-full h-[300px]">
               <CardHeader className="absolute z-10 top-1 flex-col items-start">

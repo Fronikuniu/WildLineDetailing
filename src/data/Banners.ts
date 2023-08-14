@@ -29,3 +29,10 @@ export const contactBanner: IBanner = {
   imageSrc: '/banner.jpg',
   alt: 'Kontakty baner',
 };
+
+export const banners: Record<string, IBanner> = {
+  care: careBanner,
+  packages: packagesBanner,
+  protection: protectionBanner,
+  renovation: renovationBanner,
+};

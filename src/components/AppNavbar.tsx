@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import {
   Navbar,
   NavbarBrand,
@@ -10,6 +9,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  Image,
 } from '@nextui-org/react';
 import { useEffect, useState } from 'react';
 import { getURL } from 'next/dist/shared/lib/utils';
@@ -70,7 +70,7 @@ export default function AppNavbar() {
           <NavbarItem isActive={url === item.href} key={`${item}-${i}`}>
             <Link
               color="foreground"
-              className={url === item.href ? 'text-yellowC-100' : ''}
+              className={url.includes(item.href) ? 'text-yellowC-100' : ''}
               href={item.href}
             >
               {item.label.toUpperCase()}

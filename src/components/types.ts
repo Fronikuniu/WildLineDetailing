@@ -10,7 +10,19 @@ export interface IImage {
   id: number;
   imageSrc: string;
   title: string;
-  href?: string;
+}
+
+export interface IProduct {
+  id: string;
+  imageSrc: string;
+  title: string;
+  href: string;
+  includes: string[];
+  price: number;
+  implementation: string;
+  options: string[];
+  whyWorthIt: string[];
+  desc: string;
 }
 
 export interface IBanner {
