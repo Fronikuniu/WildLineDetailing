@@ -117,9 +117,11 @@ export default function Home() {
         </div>
 
         <div className="w-full px-6 lg:px-0 max-w-[1024px]">
-          <h2 className="mb-6 font-semibold text-3xl w-full max-w-[1024px] lg:text-5xl px-6 md:px-9 lg:px-6 text-blackC-100 text-center">
-            Opinie o nas
-          </h2>
+          {opinions.length && (
+            <h2 className="mb-6 font-semibold text-3xl w-full max-w-[1024px] lg:text-5xl px-6 md:px-9 lg:px-6 text-blackC-100 text-center">
+              Opinie o nas
+            </h2>
+          )}
           <div ref={ref} onMouseDown={onMouseDown} className="overflow-hidden">
             <div className="w-max flex gap-5">
               {opinions.map((opinion, i) => (

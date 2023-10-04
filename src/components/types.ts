@@ -17,12 +17,13 @@ export interface IProduct {
   imageSrc: string;
   title: string;
   href: string;
-  includes: string[];
-  price: number;
-  implementation: string;
-  options: string[];
-  whyWorthIt: string[];
-  desc: string;
+  includes?: string[];
+  priceFrom?: number;
+  priceTo?: number;
+  implementation?: string;
+  options?: string[];
+  whyWorthIt?: string[];
+  desc?: string;
 }
 
 export interface IBanner {

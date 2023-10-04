@@ -41,10 +41,14 @@ export default function Page({
               </ul>
             </div>
           )}
-          {product?.price && (
+          {product?.priceFrom && (
             <div className="flex flex-col gap-1">
               <h2 className="text-xl md:text-2xl">Koszt realizacji:</h2>
-              <p className="text-lg md:text-xl">{product.price}</p>
+              <p className="text-lg md:text-xl">
+                Od {product.priceFrom}
+                {'zł netto '}
+                {product.priceTo && 'Do ' + product.priceTo}{' '}
+              </p>
             </div>
           )}
           {product?.implementation && (

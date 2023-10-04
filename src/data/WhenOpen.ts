@@ -2,9 +2,9 @@ import { IOpenAt, TDay } from '@/components/types';
 
 export const openAt: IOpenAt = {
   fromDay: 'Poniedziałek',
-  toDay: 'Sobota',
+  toDay: 'Piątek',
   fromHour: 8,
-  toHour: 16,
+  toHour: 17,
 };
 
 export const days: TDay[] = [
