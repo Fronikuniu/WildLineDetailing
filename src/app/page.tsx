@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="bg-[url(/landing_image.png)] h-screen w-screen bg-no-repeat bg-cover bg-bottom">
+      <section className="bg-[url(/landing-image.webp)] h-screen w-screen bg-no-repeat bg-cover bg-bottom">
         <div className="bg-gradient-to-t from-blackC-100 h-screen w-screen flex justify-start xl:justify-center items-center pt-[100px] relative">
           <p className="w-4/5 max-w-[1024px] px-6 md:text-4xl lg:text-5xl text-2xl">
             Lorem, <span className="text-yellowC-100 font-bold">ipsum</span>{' '}
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="w-1/2 h-full flex justify-center items-center">
             <Image
               className="max-w-[300px] lg:max-w-[450px] object-contain m-auto"
-              src="/logo_transparent.png"
+              src="/logo-transparent.webp"
               alt="My picture"
             ></Image>
           </div>

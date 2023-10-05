@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="w-full text-blackC-100 flex flex-col justify-center items-center gap-7">
           <div className="flex flex-col justify-center items-center gap-2">
             <Image
-              src="/logo_transparent.png"
+              src="/logo-transparent.webp"
               alt="WildLine Detailing logo"
               className="w-[90%] m-auto"
             ></Image>

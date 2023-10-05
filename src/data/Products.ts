@@ -3,7 +3,7 @@ import { IProduct } from '@/components/types';
 export const protectionProducts: IProduct[] = [
   {
     id: 'ceramic_coatings',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/ceramic-coatings.webp',
     title: 'Powłoki ceramiczne',
     href: '/protection/ceramic_coatings',
     includes: [
@@ -22,7 +22,7 @@ export const protectionProducts: IProduct[] = [
   },
   {
     id: 'wax_application',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/wax-application.webp',
     title: 'Aplikacja wosku',
     href: '/protection/wax_application',
     includes: [
@@ -40,7 +40,7 @@ export const protectionProducts: IProduct[] = [
   },
   {
     id: 'rim_protection',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/rim-protection.webp',
     title: 'Zabezpieczenie felg',
     href: '/protection/rim_protection',
     includes: [
@@ -60,7 +60,7 @@ export const protectionProducts: IProduct[] = [
   },
   {
     id: 'invisible_wiper',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/invisible-wiper.webp',
     title: 'Niewidzialna wycieraczka',
     href: '/protection/invisible_wiper',
     includes: [
@@ -82,7 +82,7 @@ export const protectionProducts: IProduct[] = [
 export const careProducts: IProduct[] = [
   {
     id: 'basic_detailing_wash',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/basic-detailing-wash.webp',
     title: 'Podstawowe mycie detailingowe',
     href: '/care/basic_detailing_wash',
     implementation: '',
@@ -94,7 +94,7 @@ export const careProducts: IProduct[] = [
   },
   {
     id: 'comprehensive_detailing_wash',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/comprehensive-detailing-wash.webp',
     title: 'Kompleksowe mycie detailingowe',
     href: '/care/comprehensive_detailing_wash',
     implementation: '',
@@ -106,7 +106,7 @@ export const careProducts: IProduct[] = [
   },
   {
     id: 'basic_interior_detailing',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/basic-interior-detailing.webp',
     title: 'Podstawowy detailing wnętrza',
     href: '/care/basic_interior_detailing',
     implementation: '',
@@ -118,7 +118,7 @@ export const careProducts: IProduct[] = [
   },
   {
     id: 'comprehensive_interior_detailing',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/comprehensive-interior-detailing.webp',
     title: 'Kompleksowy detailing wnętrza',
     href: '/care/comprehensive_interior_detailing',
     implementation: '',
@@ -132,7 +132,7 @@ export const careProducts: IProduct[] = [
 export const renovationProducts: IProduct[] = [
   {
     id: 'paint_renovation',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/paint-renovation.webp',
     title: 'Renowacja lakieru',
     href: '/renovation/paint_renovation',
     includes: [
@@ -155,7 +155,7 @@ export const renovationProducts: IProduct[] = [
 export const packagesProducts: IProduct[] = [
   {
     id: 'basic_package',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/basic-package.webp',
     title: 'Pakiet podstawowy',
     href: '/packages/basic_package',
     implementation: '',
@@ -167,7 +167,7 @@ export const packagesProducts: IProduct[] = [
   },
   {
     id: 'comprehensive_package',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/comprehensive-package.webp',
     title: 'Pakiet kompleksowy',
     href: '/packages/comprehensive_package',
     implementation: '',
@@ -179,7 +179,7 @@ export const packagesProducts: IProduct[] = [
   },
   {
     id: 'prepare_for_sale',
-    imageSrc: '/car_dark.png',
+    imageSrc: '/prepare-for-sale.webp',
     title: 'Przygotowanie pojazdu do sprzedaży',
     href: '/packages/prepare_for_sale',
     implementation: '',

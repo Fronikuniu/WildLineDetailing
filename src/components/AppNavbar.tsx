@@ -38,7 +38,7 @@ export default function AppNavbar() {
         <NavbarBrand>
           <Link href="/" className="hover:opacity-100">
             <Image
-              src={'/logo_white_transparent.png'}
+              src={'/logo-white-transparent.webp'}
               alt="logo"
               width={85}
               height={85}
@@ -57,7 +57,7 @@ export default function AppNavbar() {
         <NavbarBrand>
           <Link href="/" className="hover:opacity-100">
             <Image
-              src={'/logo_white_transparent.png'}
+              src={'/logo-white-transparent.webp'}
               alt="logo"
               width={90}
               height={90}

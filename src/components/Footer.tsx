@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:gap-0 md:grid-cols-2 pb-12">
           <div className="flex flex-col justify-center items-center sm:flex-row gap-10">
             <Image
-              src="/logo_white_transparent.png"
+              src="/logo-white-transparent.webp"
               alt="WildLine Detailing Logo"
               className="object-contain"
               width={200}
