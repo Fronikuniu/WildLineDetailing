@@ -1,5 +1,26 @@
 import { IProduct } from '@/components/types';
 
+export const priceColumns = [
+  {
+    key: 'service',
+    label: 'USŁUGA',
+  },
+  {
+    key: 'small',
+    label: 'MAŁY',
+    tooltip: 'hatchback',
+  },
+  {
+    key: 'medium',
+    label: 'ŚREDNI',
+    tooltip: 'sedan, coupe',
+  },
+  {
+    key: 'big',
+    label: 'DUŻY',
+    tooltip: 'suv, combi, limuzyna, van, bus',
+  },
+];
 export const protectionProducts: IProduct[] = [
   {
     id: 'ceramic_coatings',
@@ -11,7 +32,15 @@ export const protectionProducts: IProduct[] = [
       'Przygotowanie lakieru poprzez korektę lakieru',
       'Aplikację powłoki ceramicznej (roczna lub 3-letnia)',
     ],
-    priceFrom: 1099,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: [
       'Łatwiejsza bieżąca pielęgnacja samochodu',
       'Ochrona przed czynnikami zewnętrznymi i wpływem środowiska',
@@ -29,7 +58,15 @@ export const protectionProducts: IProduct[] = [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Aplikacja wosku',
     ],
-    priceFrom: 250,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: [
       'Łatwiejsza bieżąca pielęgnacja samochodu',
       'Ochrona przed czynnikami zewnętrznymi i wpływem środowiska',
@@ -48,7 +85,15 @@ export const protectionProducts: IProduct[] = [
       'Przygotowanie felg do aplikacji powłoki',
       'Aplikację powłoki ceramicznej',
     ],
-    priceFrom: 250,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: [
       'Aplikację powłoki ceramiczne',
       'Ochrona przed czynnikami zewnętrznymi i wpływem środowiska',
@@ -68,7 +113,15 @@ export const protectionProducts: IProduct[] = [
       'Przygotowanie szyb do aplikacji powłoki',
       'Aplikację powłoki na wybrane szyby / lusterka',
     ],
-    priceFrom: 250,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: [
       'Najlepsza ochrona przed zabrudzeniami i owadami',
       'Dłużej czyste i lśniące szyby',
@@ -88,7 +141,15 @@ export const careProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -100,7 +161,15 @@ export const careProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -112,7 +181,15 @@ export const careProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -124,7 +201,15 @@ export const careProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -139,7 +224,15 @@ export const renovationProducts: IProduct[] = [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Jedno, dwu lub wieloetapowa korekta lakieru',
     ],
-    priceFrom: 599,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     options: [
       'Jednoetapowa - od 599zł netto',
       'Dwuetapowa - od 999zł netto',
@@ -161,7 +254,15 @@ export const packagesProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -173,7 +274,15 @@ export const packagesProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },
@@ -185,7 +294,15 @@ export const packagesProducts: IProduct[] = [
     implementation: '',
     includes: ['', ''],
     options: ['', ''],
-    priceFrom: 1000,
+    price: [
+      {
+        key: '1',
+        service: 'test',
+        small: 'wiersz 1',
+        medium: 'wiersz 2',
+        big: 'wiersz 3',
+      },
+    ],
     whyWorthIt: ['', ''],
     desc: '',
   },

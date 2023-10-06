@@ -1,13 +1,39 @@
 'use client';
 
-import { products } from '@/data/Products';
-import { Image } from '@nextui-org/react';
+import { priceColumns, products } from '@/data/Products';
+import {
+  Button,
+  Image,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Table,
+  TableBody,
+  TableCell,
+  TableColumn,
+  TableHeader,
+  TableRow,
+  Tooltip,
+  getKeyValue,
+  useDisclosure,
+} from '@nextui-org/react';
+import { FaCircleInfo } from 'react-icons/fa6';
 
 export default function Page({
   params,
 }: {
   params: { mainRoute: string; product: string };
 }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleOpen = () => {
+    onOpen();
+  };
+
   const product = products[params.mainRoute].find(
     (product) => product.id === params.product
   );
@@ -30,10 +56,12 @@ export default function Page({
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 text-blackC-100 text-center">
+        <div className="flex flex-col gap-5 text-blackC-100 text-center">
           {product?.includes && (
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl md:text-2xl">Co zawiera usługa?:</h2>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-xl md:text-2xl font-semibold">
+                Co zawiera usługa?:
+              </h2>
               <ul className="text-lg md:text-xl">
                 {product.includes.map((product) => (
                   <li key={product}>• {product}</li>
@@ -41,25 +69,105 @@ export default function Page({
               </ul>
             </div>
           )}
-          {product?.priceFrom && (
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl md:text-2xl">Koszt realizacji:</h2>
-              <p className="text-lg md:text-xl">
-                Od {product.priceFrom}
-                {'zł netto '}
-                {product.priceTo && 'Do ' + product.priceTo}{' '}
-              </p>
+          {product?.price && (
+            <div className="flex flex-col gap-3">
+              <h2 className="text-xl md:text-2xl font-semibold">
+                Koszt realizacji:
+              </h2>
+
+              <div className="relative w-max m-auto">
+                <Button
+                  className="text-md bg-blackC-100"
+                  onClick={() => handleOpen()}
+                >
+                  Sprawdź koszty realizacji!
+                </Button>
+                <span className="absolute flex h-3 w-3 -top-[2px] -right-[2px]">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellowC-100 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-yellowC-100"></span>
+                </span>
+              </div>
+
+              <Modal size="xl" isOpen={isOpen} onClose={onClose}>
+                <ModalContent>
+                  <>
+                    <ModalHeader className="flex flex-col gap-1">
+                      Koszta realizacji dla usługi: {product?.title}
+                    </ModalHeader>
+                    <ModalBody className="p-0">
+                      <Table aria-label="Example table with dynamic content">
+                        <TableHeader columns={priceColumns}>
+                          {(column) => (
+                            <TableColumn key={column.key}>
+                              <p className="flex items-center gap-1">
+                                {column.label}
+                                {column.tooltip && (
+                                  <Popover
+                                    placement="top"
+                                    className="bg-yellowC-100 text-blackC-100"
+                                  >
+                                    <PopoverTrigger>
+                                      <Button isIconOnly variant="light">
+                                        <FaCircleInfo></FaCircleInfo>
+                                      </Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent>
+                                      <div className="px-1 py-2">
+                                        <p>{column.tooltip}</p>
+                                      </div>
+                                    </PopoverContent>
+                                  </Popover>
+                                )}
+                              </p>
+                            </TableColumn>
+                          )}
+                        </TableHeader>
+                        <TableBody items={product.price}>
+                          {(item) => (
+                            <TableRow key={item.key}>
+                              {(columnKey) => (
+                                <TableCell
+                                  className={
+                                    (columnKey === 'service' &&
+                                      'bg-default-100 rounded-lg') ||
+                                    ''
+                                  }
+                                >
+                                  {getKeyValue(item, columnKey)}
+                                </TableCell>
+                              )}
+                            </TableRow>
+                          )}
+                        </TableBody>
+                      </Table>
+                    </ModalBody>
+                    <ModalFooter>
+                      {/* <Button
+                          className="text-yellowC-100"
+                          variant="light"
+                          onPress={onClose}
+                        >
+                          Zamknij
+                        </Button> */}
+                    </ModalFooter>
+                  </>
+                </ModalContent>
+              </Modal>
             </div>
           )}
           {product?.implementation && (
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl md:text-2xl">Czas realizacji:</h2>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-xl md:text-2xl font-semibold">
+                Czas realizacji:
+              </h2>
               <p className="text-lg md:text-xl">{product.implementation}</p>
             </div>
           )}
           {product?.options && (
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl md:text-2xl">Dodatkowe opcje:</h2>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-xl md:text-2xl font-semibold">
+                Dodatkowe opcje:
+              </h2>
               <ul className="text-lg md:text-xl">
                 {product.options.map((product) => (
                   <li key={product}>• {product}</li>
@@ -68,8 +176,10 @@ export default function Page({
             </div>
           )}
           {product?.whyWorthIt && (
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl md:text-2xl">Dlaczego warto?:</h2>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-xl md:text-2xl font-semibold">
+                Dlaczego warto?:
+              </h2>
               <ul className="text-lg md:text-xl">
                 {product.whyWorthIt.map((product) => (
                   <li key={product}>• {product}</li>

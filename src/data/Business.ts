@@ -6,5 +6,4 @@ export const business = {
   email: 'wildlinedetailing@gmail.com',
   link1: 'https://www.instagram.com/wildlinedetailing/',
   link2: 'https://www.instagram.com/wildlinedetailing/',
-  link3: 'https://www.instagram.com/krzzzychu/',
 };

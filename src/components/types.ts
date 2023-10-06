@@ -18,7 +18,13 @@ export interface IProduct {
   title: string;
   href: string;
   includes?: string[];
-  priceFrom?: number;
+  price?: {
+    key: string;
+    service: string;
+    small: string;
+    medium: string;
+    big: string;
+  }[];
   priceTo?: number;
   implementation?: string;
   options?: string[];

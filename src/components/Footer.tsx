@@ -112,14 +112,6 @@ export default function Footer() {
               >
                 <FaFacebook className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-yellowC-100" />
               </Link>
-              <Link
-                className="text-3xl"
-                color="foreground"
-                title="Instagram krzzzychu"
-                href={business.link3}
-              >
-                <FaInstagram className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-yellowC-100" />
-              </Link>
             </div>
           </div>
         </div>
