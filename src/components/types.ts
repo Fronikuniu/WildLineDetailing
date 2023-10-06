@@ -24,6 +24,7 @@ export interface IProduct {
     small: string;
     medium: string;
     big: string;
+    bus: string;
   }[];
   priceTo?: number;
   implementation?: string;
