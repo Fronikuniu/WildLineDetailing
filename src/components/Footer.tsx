@@ -96,13 +96,28 @@ export default function Footer() {
               ))}
             </div>
             <div className="text-3xl flex flex-col gap-3">
-              <Link className="text-3xl" color="foreground">
+              <Link
+                className="text-3xl"
+                color="foreground"
+                title="Instagram WildLine Detailing"
+                href={business.link1}
+              >
                 <FaInstagram className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-yellowC-100" />
               </Link>
-              <Link className="text-3xl" color="foreground">
+              <Link
+                className="text-3xl"
+                color="foreground"
+                title="Facebook WildLine Detailing"
+                href={business.link2}
+              >
                 <FaFacebook className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-yellowC-100" />
               </Link>
-              <Link className="text-3xl" color="foreground">
+              <Link
+                className="text-3xl"
+                color="foreground"
+                title="Instagram krzzzychu"
+                href={business.link3}
+              >
                 <FaInstagram className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-yellowC-100" />
               </Link>
             </div>

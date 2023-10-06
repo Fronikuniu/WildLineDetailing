@@ -35,7 +35,7 @@ export default function AppNavbar() {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="sm:hidden pr-3" justify="start">
-        <NavbarBrand>
+        <NavbarItem>
           <Link href="/" className="hover:opacity-100">
             <Image
               src={'/logo-white-transparent.webp'}
@@ -44,17 +44,19 @@ export default function AppNavbar() {
               height={85}
             ></Image>
           </Link>
-        </NavbarBrand>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden" justify="end">
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-        />
+        <NavbarItem>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          />
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
-        <NavbarBrand>
+        <NavbarItem>
           <Link href="/" className="hover:opacity-100">
             <Image
               src={'/logo-white-transparent.webp'}
@@ -63,7 +65,7 @@ export default function AppNavbar() {
               height={90}
             ></Image>
           </Link>
-        </NavbarBrand>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         {menuItems.map((item, i) => (
