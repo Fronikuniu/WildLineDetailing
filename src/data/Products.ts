@@ -20,6 +20,11 @@ export const priceColumns = [
     label: 'DUŻY',
     tooltip: 'suv, combi, limuzyna, van, bus',
   },
+  {
+    key: 'bus',
+    label: 'BUS',
+    tooltip: 'van, bus',
+  },
 ];
 export const protectionProducts: IProduct[] = [
   {
