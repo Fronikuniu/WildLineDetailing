@@ -113,7 +113,7 @@ export default function Contact() {
 
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1282.8469688860562!2d22.021170098225156!3d49.979598043217415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cf9fe7a4800a1%3A0xbb532598ec6b84da!2sAleja%20Genera%C5%82a%20W%C5%82adys%C5%82awa%20Sikorskiego%20443%2C%2035-304%20Rzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1691688406428!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907.1101878892725!2d22.02161911314213!3d49.97957698881119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cf9cee80fe85f%3A0xbf0ce162078b60b1!2sWildline%20Detailing!5e0!3m2!1spl!2spl!4v1696718561183!5m2!1spl!2spl"
             className="w-full h-[400px] border-none rounded-2xl"
             allowFullScreen
             loading="lazy"
