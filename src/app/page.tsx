@@ -29,8 +29,8 @@ export default function Home() {
       <section className="bg-[url(/landing-image.webp)] h-screen w-screen bg-no-repeat bg-cover bg-bottom">
         <div className="bg-gradient-to-t from-blackC-100 h-screen w-screen flex justify-start xl:justify-center items-center pt-[100px] relative">
           <p className="w-4/5 max-w-[1024px] px-6 md:text-4xl lg:text-5xl text-2xl">
-            Lorem, <span className="text-yellowC-100 font-bold">ipsum</span>{' '}
-            dolor sit amet consectetur adipisicing elit.
+            Już <span className="text-yellowC-100 font-bold">wkrótce</span>{' '}
+            wielkie otwarcie! Zapoznaj się z naszą ofertą już dziś!
           </p>
           <Button
             className="absolute bottom-[10%] left-1/2 tra animate-bounce border-2 text-yellowC-100 border-yellowC-100 rounded-full bg-transparent"
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
         <h1 className="font-semibold text-3xl w-full max-w-[1024px] lg:text-5xl px-6 md:px-9 lg:px-6 text-blackC-100 text-center">
-          Lorem ipsum dolor sit.
+          Kilka słów o nas
         </h1>
 
         <div className="flex flex-col-reverse md:flex-row gap-5 w-full items-center max-w-[1024px] px-6 md:px-9 lg:px-6">
@@ -72,12 +72,14 @@ export default function Home() {
           </div>
           <div className="w-100 sm:w-1/2">
             <p className="w-full text-blackC-100 text-center sm:px-7 lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis magnam corrupti id laudantium, blanditiis deserunt
-              enim vel totam officia iusto eaque sequi. Dicta tempora architecto
-              ea doloremque aperiam provident laudantium corrupti nihil quae
-              vitae ullam officiis repellat cupiditate optio, sint accusantium
-              libero in. Quia voluptate architecto repellat totam sapiente unde.
+              Jesteśmy młodym zespołem detailingowym. Naszą pasją są samochody i
+              chcemy, aby wyglądały jak z salonu. Oferujemy profesjonalne usługi
+              czyszczenia, polerowania i konserwacji lakieru, felg, szyb, opon i
+              wnętrza pojazdu. Korzystamy z najnowszych technologii i
+              najlepszych produktów na rynku. Dbamy o każdy szczegół i
+              gwarantujemy satysfakcję naszych klientów. Zapraszamy do
+              zapoznania się z naszą ofertą i kontaktu z nami. Chcemy sprawić,
+              że Twój samochód będzie błyszczeć!
             </p>
           </div>
         </div>

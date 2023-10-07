@@ -141,14 +141,13 @@ export default function Page({
                         </TableBody>
                       </Table>
                     </ModalBody>
-                    <ModalFooter>
-                      {/* <Button
-                          className="text-yellowC-100"
-                          variant="light"
-                          onPress={onClose}
-                        >
-                          Zamknij
-                        </Button> */}
+                    <ModalFooter className="flex-col items-end">
+                      {['ceramic_coatings', 'wax_application'].includes(
+                        product.id
+                      ) && <p>Należy doliczyć koszta korekty lakieru.</p>}
+                      <p className="text-sm w-max">
+                        ** Wszystkie ceny są cenami netto.
+                      </p>
                     </ModalFooter>
                   </>
                 </ModalContent>
