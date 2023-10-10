@@ -342,6 +342,28 @@ export const renovationProducts: IProduct[] = [
     ],
     desc: 'Codzienna eksploatacja i mycie samochodu naraża lakier na powstawanie uszkodzeń i zarysowań. Duża ilość zarysowań i zmatowień pogarsza jego estetykę - lakier traci swoją głębię i połysk. Możemy pomóc przywrócić mu dawną świetność dzięki usłudze korekty lakieru. Obecnie na samochodach stosowane są bardzo miękkie lakiery wodne, dlatego nawet w nowych samochodach, które dopiero co opuściły Salon mogą zdarzyć się już zarysowania. Również wtedy lakier potrzebuje zabiegu renowacji.',
   },
+  {
+    id: 'headlight_renovation',
+    imageSrc: '/headlight-renovation.webp',
+    title: 'Renowacja reflektorów',
+    href: '/renovation/headlight_renovation',
+    includes: ['Renowacja reflektorów'],
+    price: [
+      {
+        key: '1',
+        service: 'Renowacja reflektorów',
+        small: 'od 30zł/sztuka',
+        medium: 'od 30zł/sztuka',
+        big: 'od 30zł/sztuka',
+        bus: 'od 30zł/sztuka',
+      },
+    ],
+    whyWorthIt: [
+      'Poprawia przejrzystość klosza lampy',
+      'Zwiększa widoczność i skuteczność oświetlenia',
+    ],
+    desc: 'Renowacja reflektorów w detailingu samochodowym to proces, który polega na przywróceniu blasku i przejrzystości reflektorom, które uległy zmatowieniu, zarysowaniu lub innym uszkodzeniom. Renowacja reflektorów poprawia nie tylko estetykę pojazdu, ale także bezpieczeństwo jazdy, ponieważ zwiększa widoczność i skuteczność oświetlenia.',
+  },
 ];
 export const packagesProducts: IProduct[] = [
   {
