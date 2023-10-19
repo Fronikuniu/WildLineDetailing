@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Providers } from './providers';
 import AppNavbar from '@/components/AppNavbar';
 import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'WildLine Detailing',
@@ -21,6 +22,7 @@ export default function RootLayout({
           <AppNavbar></AppNavbar>
           {children}
           <Footer></Footer>
+          <Analytics />
         </Providers>
       </body>
     </html>
