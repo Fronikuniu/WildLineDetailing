@@ -29,8 +29,8 @@ export default function Home() {
       <section className="bg-[url(/landing-image.webp)] h-screen w-screen bg-no-repeat bg-cover bg-bottom">
         <div className="bg-gradient-to-t from-blackC-100 h-screen w-screen flex justify-start xl:justify-center items-center pt-[100px] relative">
           <p className="w-4/5 max-w-[1024px] px-6 md:text-4xl lg:text-5xl text-2xl">
-            Już <span className="text-yellowC-100 font-bold">wkrótce</span>{' '}
-            wielkie otwarcie! Zapoznaj się z naszą ofertą już dziś!
+            Już <span className="text-yellowC-100 font-bold">OTWARTE</span>!
+            Zapraszamy do współpracy oraz zapoznania się z naszą ofertą!
           </p>
           <Button
             className="absolute bottom-[10%] left-1/2 tra animate-bounce border-2 text-yellowC-100 border-yellowC-100 rounded-full bg-transparent"
