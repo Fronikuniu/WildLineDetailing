@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       <section className="pr-[15px] w-screen bg-blackC-100 pt-[131px] pb-[100px] flex justify-center items-center">
-        <Gallery items={images}></Gallery>
+        <Gallery items={images.slice(0, 6)}></Gallery>
       </section>
 
       <section className="pr-[15px] w-screen relative bg-lightC-100 pt-[150px] pb-[150px] flex flex-col justify-center items-center ">
