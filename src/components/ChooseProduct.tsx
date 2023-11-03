@@ -22,6 +22,7 @@ export default function ChooseProduct({
           className="w-screen h-[350px] z-0 object-cover object-top"
           src={banner?.imageSrc}
           alt={banner?.alt}
+          loading="lazy"
         ></Image>
 
         <div className="custom-shape-divider-top-1691601869">
@@ -54,6 +55,7 @@ export default function ChooseProduct({
                 className="z-0 w-full h-full object-cover"
                 alt={image.title}
                 src={image.imageSrc}
+                loading="lazy"
               />
               <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
                 <div className="flex flex-grow gap-2 items-center">

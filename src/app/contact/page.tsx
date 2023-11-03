@@ -39,6 +39,7 @@ export default function Contact() {
           className="w-screen h-[350px] z-0 object-cover object-top"
           src={contactBanner.imageSrc}
           alt={contactBanner.alt}
+          loading="lazy"
         ></Image>
 
         <div className="custom-shape-divider-top-1691601869">
@@ -64,6 +65,7 @@ export default function Contact() {
               src="/logo-transparent.webp"
               alt="WildLine Detailing logo"
               className="w-[90%] m-auto"
+              loading="lazy"
             ></Image>
             <p className="text-2xl lg:text-3xl font-semibold">
               WILDLINE DETAILING

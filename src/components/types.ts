@@ -7,9 +7,12 @@ export interface IReview {
 }
 
 export interface IImage {
-  id: number;
-  imageSrc: string;
-  title: string;
+  id: string;
+  media_url: string;
+  timestamp: string;
+  media_type: string;
+  permalink: string;
+  caption: string;
 }
 
 export interface IProduct {

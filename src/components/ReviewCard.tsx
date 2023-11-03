@@ -14,6 +14,7 @@ export default function ReviewCard({ item }: { item: IReview }) {
             radius="sm"
             src={item.imageSrc}
             width={40}
+            loading="lazy"
           />
           <div className="flex flex-col">
             <p className="text-md">{item.name}</p>

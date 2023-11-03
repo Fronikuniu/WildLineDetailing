@@ -52,6 +52,7 @@ export default function Page({
               src={product?.imageSrc}
               alt="Product image"
               className="w-[90%] m-auto"
+              loading="lazy"
             ></Image>
           </div>
         </div>

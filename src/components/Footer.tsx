@@ -40,6 +40,7 @@ export default function Footer() {
               alt="WildLine Detailing Logo"
               className="object-contain"
               width={200}
+              loading="lazy"
             ></Image>
             <div className="flex gap-x-10 gap-y-5 flex-col">
               <div className="flex flex-col">

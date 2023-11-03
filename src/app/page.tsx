@@ -1,9 +1,8 @@
 'use client';
 
-import Gallery from '@/components/Gallery';
 import ReviewCard from '@/components/ReviewCard';
-import { images } from '@/data/Images';
 import { opinions } from '@/data/Reviews';
+import GalleryData from '@/getData/getGallery';
 import { Button, Image } from '@nextui-org/react';
 import { useRef } from 'react';
 import { FaArrowDown } from 'react-icons/fa6';
@@ -68,6 +67,7 @@ export default function Home() {
               className="max-w-[300px] lg:max-w-[450px] object-contain m-auto"
               src="/logo-transparent.webp"
               alt="My picture"
+              loading="lazy"
             ></Image>
           </div>
           <div className="w-100 sm:w-1/2">
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       <section className="pr-[15px] w-screen bg-blackC-100 pt-[131px] pb-[100px] flex justify-center items-center">
-        <Gallery items={images.slice(0, 6)}></Gallery>
+        <GalleryData />
       </section>
 
       <section className="pr-[15px] w-screen relative bg-lightC-100 pt-[150px] pb-[150px] flex flex-col justify-center items-center ">

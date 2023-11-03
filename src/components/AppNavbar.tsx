@@ -42,6 +42,7 @@ export default function AppNavbar() {
               alt="logo"
               width={85}
               height={85}
+              loading="lazy"
             ></Image>
           </Link>
         </NavbarItem>
@@ -63,6 +64,7 @@ export default function AppNavbar() {
               alt="logo"
               width={90}
               height={90}
+              loading="lazy"
             ></Image>
           </Link>
         </NavbarItem>
