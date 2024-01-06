@@ -367,43 +367,6 @@ export const renovationProducts: IProduct[] = [
 ];
 export const packagesProducts: IProduct[] = [
   {
-    id: 'basic_package',
-    imageSrc: '/basic-package.webp',
-    title: 'Pakiet podstawowy',
-    href: '/packages/basic_package',
-    includes: ['Podstawowe mycie detailingowe', 'Podstawowy detailing wnętrza'],
-    price: [
-      {
-        key: '1',
-        service: 'Pakiet podstawowy',
-        small: '100zł',
-        medium: '110zł',
-        big: '120zł',
-        bus: 'Wycena indywidualna',
-      },
-    ],
-  },
-  {
-    id: 'comprehensive_package',
-    imageSrc: '/comprehensive-package.webp',
-    title: 'Pakiet kompleksowy',
-    href: '/packages/comprehensive_package',
-    includes: [
-      'Kompleksowe mycie detailingowe',
-      'Kompleksowe detailing wnętrza',
-    ],
-    price: [
-      {
-        key: '1',
-        service: 'test',
-        small: '350zł',
-        medium: '400zł',
-        big: '450zł',
-        bus: 'Wycena indywidualna',
-      },
-    ],
-  },
-  {
     id: 'prepare_for_sale',
     imageSrc: '/prepare-for-sale.webp',
     title: 'Przygotowanie pojazdu do sprzedaży',
