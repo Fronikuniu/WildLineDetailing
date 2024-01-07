@@ -54,6 +54,22 @@ export const protectionProducts: IProduct[] = [
         big: '1500zł',
         bus: 'od 1600zł',
       },
+      {
+        key: '3',
+        service: '4-letnia powłoka ceramiczna',
+        small: '1450zł',
+        medium: '1750zł',
+        big: '1850zł',
+        bus: 'od 1950zł',
+      },
+      {
+        key: '4',
+        service: '5-letnia powłoka ceramiczna',
+        small: 'wycena indywidualna',
+        medium: 'wycena indywidualna',
+        big: 'wycena indywidualna',
+        bus: 'wycena indywidualna',
+      },
     ],
     whyWorthIt: [
       'Łatwiejsza bieżąca pielęgnacja samochodu',
@@ -132,11 +148,19 @@ export const protectionProducts: IProduct[] = [
     price: [
       {
         key: '1',
-        service: 'Niewidzialna wycieraczka (komplet szyb)',
+        service: 'Szyba czołowa',
         small: '150zł',
         medium: '150zł',
         big: '150zł',
         bus: '150zł',
+      },
+      {
+        key: '2',
+        service: 'Wszystkie szyby',
+        small: '250zł',
+        medium: '250zł',
+        big: '250zł',
+        bus: '250zł',
       },
     ],
     whyWorthIt: [
