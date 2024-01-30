@@ -28,10 +28,10 @@ export const priceColumns = [
 ];
 export const protectionProducts: IProduct[] = [
   {
-    id: 'ceramic_coatings',
-    imageSrc: '/ceramic-coatings.webp',
+    id: 'powloki_ceramiczne',
+    imageSrc: '/powloki_ceramiczne.webp',
     title: 'Powłoki ceramiczne',
-    href: '/protection/ceramic_coatings',
+    href: '/ochrona/powloki-ceramiczne',
     includes: [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Przygotowanie lakieru poprzez korektę lakieru',
@@ -80,10 +80,10 @@ export const protectionProducts: IProduct[] = [
     desc: 'Powłoki ceramiczne to obecnie jedne z najpopularniejszych i najlepszych metod ochrony lakieru. Ochrona ceramiczna to idealne rozwiązanie, by Twój samochód wyglądał doskonale przez długi czas. Powłoka ceramiczna po aplikacji permanentnie wiąże się z lakierem, co zapewnia ochronę przed wpływem środowiska nawet do 10 lat. Dzięki swoim właściwościom ułatwia odprowadzanie wody z karoserii samochodu, dzięki czemu samochód mniej brudzi się w trakcie eksploatacji, jak również ułatwia to bieżącą pielęgnację. Dodatkowy efektem jest podniesienie poziomu połysku oraz uzyskanie dużej głębi koloru. Samochód dzięki powłoce wygląda jak oblany szkłem.',
   },
   {
-    id: 'wax_application',
-    imageSrc: '/wax-application.webp',
+    id: 'aplikacja-wosku',
+    imageSrc: '/aplikacja_wosku.webp',
     title: 'Aplikacja wosku',
-    href: '/protection/wax_application',
+    href: '/ochrona/aplikacja-wosku',
     includes: [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Aplikacja wosku',
@@ -107,10 +107,10 @@ export const protectionProducts: IProduct[] = [
     desc: 'Najbardziej podstawowym zabezpieczeniem stosowanym od wielu lat jest aplikacja wosku na lakier i elementy zewnętrzne samochodu. Efekt po woskowaniu utrzymuje się od kilku tygodni do nawet kilku miesięcy w zależności od zastosowanego wosku. Woskowanie prowadzi do wyrównania porów w lakierze dzięki czemu zyskuje on niewidzialną barierę przed czynnikami zewnętrznymi. Woskowanie poprawia walory estetyczne karoserii - kolor zyskuje wyraźną głębię i połysk. W naszej ofercie znajdziesz tylko najlepsze woski na rynku!',
   },
   {
-    id: 'rim_protection',
-    imageSrc: '/rim-protection.webp',
+    id: 'zabezpieczenie-felg',
+    imageSrc: '/zabezpieczenie_felg.webp',
     title: 'Zabezpieczenie felg',
-    href: '/protection/rim_protection',
+    href: '/ochrona/zabezpieczenie-felg',
     includes: [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Przygotowanie felg do aplikacji powłoki',
@@ -136,10 +136,10 @@ export const protectionProducts: IProduct[] = [
     desc: 'Felgi w codziennej eksploatacji są wysoce narażone na niekorzystne warunki. Wysoka temparatura, pył z klocków hamulcowych powodują, że pielęgnacja ich staje się trudna, a same felgi bardzo ciężko umyć. Zabezpieczenie felg powłoką ceramiczną lub elastomerową spowoduje dużo łatwiejszą pielęgnację oraz ochronę przed wżerami z pyłu klocków hamulcowych. Dodatkowo Twoje felgi będą mieć niesamowity połysk i głebię koloru',
   },
   {
-    id: 'invisible_wiper',
-    imageSrc: '/invisible-wiper.webp',
+    id: 'niewidzialna-wycieraczka',
+    imageSrc: '/niewidzialna_wycieraczka.webp',
     title: 'Niewidzialna wycieraczka',
-    href: '/protection/invisible_wiper',
+    href: '/ochrona/niewidzialna-wycieraczka',
     includes: [
       'Bezpieczne mycie szyb i lusterek',
       'Przygotowanie szyb do aplikacji powłoki',
@@ -175,10 +175,10 @@ export const protectionProducts: IProduct[] = [
 
 export const careProducts: IProduct[] = [
   {
-    id: 'basic_detailing_wash',
-    imageSrc: '/basic-detailing-wash.webp',
+    id: 'podstawowe-mycie-detailingowe',
+    imageSrc: '/podstawowe_mycie_detailingowe.webp',
     title: 'Podstawowe mycie detailingowe',
-    href: '/care/basic_detailing_wash',
+    href: '/pielegnacja/podstawowe-mycie-detailingowe',
     includes: [
       'Bezpieczne mycie karoserii metodą na "dwa wiadra"',
       'Dokładne mycie wnęk i nadkoli',
@@ -203,10 +203,10 @@ export const careProducts: IProduct[] = [
     desc: 'Mycie detailingowe to złożony wieloetapowy proces czyszczenia elementów nadwozia przy pomocy profesjonalnych kosmetyków o bezpiecznym pH dla lakieru. Pozwala to na uzyskanie idealnej czystości wszystkich elementów karoserii.',
   },
   {
-    id: 'comprehensive_detailing_wash',
-    imageSrc: '/comprehensive-detailing-wash.webp',
+    id: 'kompleksowe-mycie-detailingowe',
+    imageSrc: '/kompleksowe_mycie_detailingowe.webp',
     title: 'Kompleksowe mycie detailingowe',
-    href: '/care/comprehensive_detailing_wash',
+    href: '/pielegnacja/kompleksowe-mycie-detailingowe',
     includes: [
       'Bezpieczne mycie karoserii metodą na "dwa wiadra"',
       'Dokładne mycie wnęk i nadkoli',
@@ -235,10 +235,10 @@ export const careProducts: IProduct[] = [
     desc: 'Mycie detailingowe to złożony wieloetapowy proces czyszczenia elementów nadwozia przy pomocy profesjonalnych kosmetyków o bezpiecznym pH dla lakieru. Pozwala to na uzyskanie idealnej czystości wszystkich elementów karoserii.',
   },
   {
-    id: 'basic_interior_detailing',
-    imageSrc: '/basic-interior-detailing.webp',
+    id: 'podstawowy-detailing-wnetrza',
+    imageSrc: '/podstawowy_detailing_wnetrza.webp',
     title: 'Podstawowy detailing wnętrza',
-    href: '/care/basic_interior_detailing',
+    href: '/pielegnacja/podstawowy-detailing-wnetrza',
     includes: [
       'Odkurzanie wnętrza, w tym podłogi, foteli, bagażnika, dywaników i szczelin',
       'Przecieranie plastików, deski rozdzielczej, konsoli środkowej, boczków drzwi i innych elementów z tworzywa sztucznego',
@@ -264,10 +264,10 @@ export const careProducts: IProduct[] = [
     desc: 'Detailing wnętrza sprawi, że wnętrze Twojego samochodu znów będzie lśnić i pachnieć nowością. Pranie tapicerki i bardzo dokładne czyszczenie każdego elementu wnętrza spowoduje, że znów będziesz odczuwał frajdę z jazdy samochodem. Do wnętrza podchodzimy bardzo rygorystycznie - każdy element będzie dokładnie wyczyszczony i zabezpieczony, a tapicerka dokładnie wyprana. Stosujemy wysokiej jakości bardzo skuteczne kosmetyki do pielęgnacji Twojego wnętrza.',
   },
   {
-    id: 'comprehensive_interior_detailing',
-    imageSrc: '/comprehensive-interior-detailing.webp',
+    id: 'kompleksowy-detailing-wnetrza',
+    imageSrc: '/kompleksowy_detailing_wnetrza.webp',
     title: 'Kompleksowy detailing wnętrza',
-    href: '/care/comprehensive_interior_detailing',
+    href: '/pielegnacja/kompleksowy-detailing-wnetrza',
     includes: [
       'Pranie i czyszczenie tapicerki (fotele, kanapa, boczki, podsufitka, bagażnik, podłoga)',
       'Czyszczenie i impregnacja tapicerki skórzanej lub winylowej',
@@ -294,10 +294,10 @@ export const careProducts: IProduct[] = [
     desc: 'Detailing wnętrza sprawi, że wnętrze Twojego samochodu znów będzie lśnić i pachnieć nowością. Pranie tapicerki i bardzo dokładne czyszczenie każdego elementu wnętrza spowoduje, że znów będziesz odczuwał frajdę z jazdy samochodem. Do wnętrza podchodzimy bardzo rygorystycznie - każdy element będzie dokładnie wyczyszczony i zabezpieczony, a tapicerka dokładnie wyprana. Stosujemy wysokiej jakości bardzo skuteczne kosmetyki do pielęgnacji Twojego wnętrza.',
   },
   {
-    id: 'washing_upholstery',
-    imageSrc: '/washing-upholstery.webp',
+    id: 'czyszczenie-tapicerki',
+    imageSrc: '/czyszczenie_tapicerki.webp',
     title: 'Czyszczenie tapicerki',
-    href: '/care/washing_upholstery',
+    href: '/pielegnacja/czyszczenie-tapicerki',
     includes: [
       'Pranie tapicerki materiałowej',
       'Czyszczenie i impregnacja tapicerki skórzanej',
@@ -326,10 +326,10 @@ export const careProducts: IProduct[] = [
 ];
 export const renovationProducts: IProduct[] = [
   {
-    id: 'paint_renovation',
-    imageSrc: '/paint-renovation.webp',
+    id: 'renowacja-lakieru',
+    imageSrc: '/renowacja_lakieru.webp',
     title: 'Renowacja lakieru',
-    href: '/renovation/paint_renovation',
+    href: '/renowacja/renowacja-lakieru',
     includes: [
       'Bezpieczne mycie detailingowe z pełną dekontaminacją',
       'Jedno, dwu lub wieloetapowa korekta lakieru',
@@ -367,10 +367,10 @@ export const renovationProducts: IProduct[] = [
     desc: 'Codzienna eksploatacja i mycie samochodu naraża lakier na powstawanie uszkodzeń i zarysowań. Duża ilość zarysowań i zmatowień pogarsza jego estetykę - lakier traci swoją głębię i połysk. Możemy pomóc przywrócić mu dawną świetność dzięki usłudze korekty lakieru. Obecnie na samochodach stosowane są bardzo miękkie lakiery wodne, dlatego nawet w nowych samochodach, które dopiero co opuściły Salon mogą zdarzyć się już zarysowania. Również wtedy lakier potrzebuje zabiegu renowacji.',
   },
   {
-    id: 'headlight_renovation',
-    imageSrc: '/headlight-renovation.webp',
+    id: 'renowacja-reflektorow',
+    imageSrc: '/renowacja_reflektorow.webp',
     title: 'Renowacja reflektorów',
-    href: '/renovation/headlight_renovation',
+    href: '/renowacja/renowacja-reflektorow',
     includes: ['Renowacja reflektorów'],
     price: [
       {
@@ -391,10 +391,10 @@ export const renovationProducts: IProduct[] = [
 ];
 export const packagesProducts: IProduct[] = [
   {
-    id: 'prepare_for_sale',
-    imageSrc: '/prepare-for-sale.webp',
+    id: 'przygotowanie-pojazdu-do-sprzedazy',
+    imageSrc: '/przygotowanie_pojazdu_do_sprzedazy.webp',
     title: 'Przygotowanie pojazdu do sprzedaży',
-    href: '/packages/prepare_for_sale',
+    href: '/pakiety/przygotowanie-pojazdu-do-sprzedazy',
     includes: [
       'Mycie detailingowe',
       'Detailing wnętrza',
@@ -422,8 +422,8 @@ export const packagesProducts: IProduct[] = [
 ];
 
 export const products: Record<string, IProduct[]> = {
-  care: careProducts,
-  packages: packagesProducts,
-  protection: protectionProducts,
-  renovation: renovationProducts,
+  pielegnacja: careProducts,
+  pakiety: packagesProducts,
+  ochrona: protectionProducts,
+  renowacja: renovationProducts,
 };

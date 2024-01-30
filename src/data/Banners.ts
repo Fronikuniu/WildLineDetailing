@@ -31,8 +31,8 @@ export const contactBanner: IBanner = {
 };
 
 export const banners: Record<string, IBanner> = {
-  care: careBanner,
-  packages: packagesBanner,
-  protection: protectionBanner,
-  renovation: renovationBanner,
+  pielegnacja: careBanner,
+  pakiety: packagesBanner,
+  ochrona: protectionBanner,
+  renowacja: renovationBanner,
 };
