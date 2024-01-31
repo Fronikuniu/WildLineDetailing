@@ -143,9 +143,12 @@ export default function Page({
                       </Table>
                     </ModalBody>
                     <ModalFooter className="flex-col items-end">
-                      {['ceramic_coatings', 'wax_application'].includes(
+                      {['powloki-ceramiczne', 'aplikacja-wosku'].includes(
                         product.id
                       ) && <p>Należy doliczyć koszta korekty lakieru.</p>}
+                      {['folie-PPF'].includes(product.id) && (
+                        <p>*Dokładna wycena po ustaleniu ceny materiału.</p>
+                      )}
                       <p className="text-sm w-max">
                         ** Wszystkie ceny są cenami netto.
                       </p>

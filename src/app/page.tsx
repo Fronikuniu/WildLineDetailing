@@ -37,10 +37,10 @@ export default function Home() {
       <section className="bg-[url(/landing-image.webp)] h-screen w-screen bg-no-repeat bg-cover bg-bottom">
         <div className="bg-gradient-to-t from-blackC-100 h-screen w-screen flex justify-start xl:justify-center items-center pt-[100px] relative">
           <div>
-            <p className="w-4/5 max-w-[1024px] px-6 md:text-4xl lg:text-5xl text-2xl pb-6">
+            <h1 className="w-4/5 max-w-[1024px] px-6 md:text-4xl lg:text-5xl text-2xl pb-6">
               AKREDYTOWANE STUDIO{' '}
               <span className="text-yellowC-100 font-bold">ULTRACOAT</span>!
-            </p>
+            </h1>
             <p className="w-4/5 max-w-[1024px] px-6 md:text-2xl lg:text-3xl text-2xl">
               Zapraszamy do współpracy oraz zapoznania się z naszą ofertą!
             </p>
@@ -71,9 +71,9 @@ export default function Home() {
           </svg>
         </div>
 
-        <h1 className="font-semibold text-3xl w-full max-w-[1024px] lg:text-5xl px-6 md:px-9 lg:px-6 text-blackC-100 text-center">
+        <h2 className="font-semibold text-3xl w-full max-w-[1024px] lg:text-5xl px-6 md:px-9 lg:px-6 text-blackC-100 text-center">
           Kilka słów o nas
-        </h1>
+        </h2>
 
         <div className="flex flex-col-reverse md:flex-row gap-5 w-full items-center max-w-[1024px] px-6 md:px-9 lg:px-6">
           <div className="w-1/2 h-full flex justify-center items-center">

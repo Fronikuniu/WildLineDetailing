@@ -28,7 +28,7 @@ export const priceColumns = [
 ];
 export const protectionProducts: IProduct[] = [
   {
-    id: 'powloki_ceramiczne',
+    id: 'powloki-ceramiczne',
     imageSrc: '/powloki_ceramiczne.webp',
     title: 'Powłoki ceramiczne',
     href: '/ochrona/powloki-ceramiczne',
@@ -167,9 +167,40 @@ export const protectionProducts: IProduct[] = [
       'Najlepsza ochrona przed zabrudzeniami i owadami',
       'Dłużej czyste i lśniące szyby',
       'Zwiększony komfort i bezpieczeństwo',
-      'Zwiększony komfort i bezpieczeństwo',
     ],
     desc: 'Niewidzialna wycieraczka to powłoka hydrofobowa aplikowana na szyby i lusterka. Zadaniem tej niewidzialnej powłoki jest odpychanie cząstek wody, dzięki czemu krople wody spychane są przez pęd powietrza. Powyżej prędkości 60 km/h nie ma konieczności używania wycieraczek w trakcie padającego deszczu. Poprawia to znacznie komfort jazdy i bezpieczeństwo.  Czyszczenie i pielęgnacja szyb również jest łatwiejsza, a owady znajdujące się na szybie po dłuższej trasie są łatwe do usunięcia.',
+  },
+  {
+    id: 'folie-ochronne-PPF',
+    imageSrc: '/folia_ppf.webp',
+    title: 'Folie ochronne PPF',
+    href: '/ochrona/folie-ochronne-PPF',
+    includes: ['Aplikacja folii ochronnej PPF'],
+    price: [
+      {
+        key: '1',
+        service: 'Full front',
+        small: 'od 5000zł',
+        medium: 'od 5000zł',
+        big: 'od 5000zł',
+        bus: 'od 5000zł',
+      },
+      {
+        key: '2',
+        service: 'Full body',
+        small: 'od 12000zł',
+        medium: 'od 12000zł',
+        big: 'od 12000zł',
+        bus: 'od 12000zł',
+      },
+    ],
+    whyWorthIt: [
+      'Najlepsza ochrona przed odpryskami i codzienną eksploatacją',
+      'Ochrona przed czynnikami zewnętrznymi i wpływem środowiska',
+      'Głęboki kolor i niesamowity połysk',
+      'Ochrona przed promieniowaniem UV i utlenianiem lakieru',
+    ],
+    desc: 'Folie ochronne PPF  to obecnie najskuteczniejszy sposób ochrony lakieru. Jest to pewna inwestycja, która zwróci się z pewnością po latach - Twój samochód dzięki ochronie folią PPF zachowa wartość na długie lata. Jest to idealna ochrona przed odpryskami, czy drobnymi zdarzeniami parkingowymi.',
   },
 ];
 

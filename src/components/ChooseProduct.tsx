@@ -59,9 +59,9 @@ export default function ChooseProduct({
               />
               <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
                 <div className="flex flex-grow gap-2 items-center">
-                  <p className="text-white/90 font-medium text-xl">
+                  <h2 className="text-white/90 font-medium text-xl">
                     {image.title}
-                  </p>
+                  </h2>
                 </div>
               </CardFooter>
             </Card>
