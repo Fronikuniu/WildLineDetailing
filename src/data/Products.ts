@@ -172,7 +172,7 @@ export const protectionProducts: IProduct[] = [
   },
   {
     id: 'folie-ochronne-PPF',
-    imageSrc: '/folia_ppf.webp',
+    imageSrc: '/folia_PPF.webp',
     title: 'Folie ochronne PPF',
     href: '/ochrona/folie-ochronne-PPF',
     includes: ['Aplikacja folii ochronnej PPF'],
